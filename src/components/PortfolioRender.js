@@ -3,6 +3,8 @@ import NavBar from "./NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 
 
 
@@ -18,6 +20,16 @@ export default function PortfolioRender () {
         if(portfolioPage === 'Contact'){
             return(
                 <Contact/>
+            )
+        }
+        if(portfolioPage === 'Portfolio'){
+            return(
+                <Portfolio/>
+            )
+        }
+        if(portfolioPage === 'Resume'){
+            return(
+                <Resume/>
             )
         }
 

@@ -25,6 +25,26 @@ export default function NavBar ({portfolioPage, handlePortfolioPage}) {
                 </a>
             </li>
 
+            <li className="nav-item">
+                <a
+                    href="#portfolio"
+                    onClick={()=> handlePortfolioPage('Portfolio')}
+                    className={portfolioPage === 'Portfolio' ? 'nav-link active': 'nav-link'}
+                >
+                    Portfolio
+                </a>
+            </li>
+
+            <li className="nav-item">
+                <a
+                    href="#resume"
+                    onClick={()=> handlePortfolioPage('Resume')}
+                    className={portfolioPage === 'Resume' ? 'nav-link active': 'nav-link'}
+                >
+                    Resume
+                </a>
+            </li>
+
         </ul>
     )
 }

@@ -5,7 +5,7 @@ export default function About (){
         <div>
             <h1>About Me</h1>
 
-            <img alt="nature" src="unnamed.jpg" width={300} height={400}/>
+            <img alt="nature" src={process.env.PUBLIC_URL + '/images/unnamed.jpg'} width={300} height={400}/>
 
             <p>
                 Hi my name is Anhvu, I graduated from UCI with a degree in Chemistry. I originally 

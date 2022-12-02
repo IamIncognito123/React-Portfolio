@@ -1,14 +1,26 @@
 import React from "react";
 
-export default function Resume (){
+export default function Resume() {
     return(
         <div>
-            <h1>About Me</h1>
-            <p>
-                Hi my name is Anhvu, I graduated from UCI with a degree in Chemistry. I originally 
-                planned on attending dental school but realized it wasn't my passion. I currently
-                work at a biotech company and wanted to build my skillset and explore a new space.
-            </p>
+            <h1>Resume</h1>
+                <h3>Download Resume</h3>
+                <h3>Front-End</h3>
+                    <p>
+                        <ul>
+                            <li>React</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </p>
+                <h3>Back-End</h3>
+                <p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>  
         </div>
     )
 }
