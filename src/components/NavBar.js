@@ -3,7 +3,9 @@ import React from "react";
 export default function NavBar ({portfolioPage, handlePortfolioPage}) {
     return(
         <ul className="nav nav-tabs">
-
+            <li className="nav-item">
+                <h1>Anhvu</h1>
+            </li>
             <li className="nav-item">
                 <a
                     href="#about"

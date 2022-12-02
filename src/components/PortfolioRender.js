@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./Footer";
 
 
 
@@ -26,6 +27,7 @@ export default function PortfolioRender () {
         <div>
             <NavBar portfolioPage={portfolioPage} handlePortfolioPage={handlePortfolioPage}/>
             {renderPortfolioPage()}
+            <Footer/>
         </div>
     )
 
