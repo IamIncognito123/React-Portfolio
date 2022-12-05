@@ -33,23 +33,27 @@ export default function Contact(){
 
     return(
         <div>
-            <h1>Contact</h1>
-            <form onSubmit={handleSubmit}>
-                <label for="name">Name:
-                    <input type='text' name="name" value={name} onChange={handleName} required/>
-                </label>
+            <h1 className="title">Contact</h1>
+             <div className="page contact-page">
 
-                <label for="email"> Email:
-                    <input type="text" name="email" value={email} onChange={handleEmail} required/>
-                </label>
+                <form onSubmit={handleSubmit}>
+                    <label className="contact-item contact-item-1" for="name">Name:
+                        <input type='text' name="name" value={name} onChange={handleName} required/>
+                    </label>
 
-                <label for="message">Message:
-                    <textarea value={textArea} onChange={handleText}/>
-                </label>
+                    <label className="contact-item contact-item-2" for="email"> Email:
+                        <input type="text" name="email" value={email} onChange={handleEmail} required/>
+                    </label>
 
-                <input type="submit" value="Submit"/>
+                    <label className="contact-item contact-item-3" for="message">Message:
+                        <textarea value={textArea} onChange={handleText}/>
+                    </label>
 
-            </form>
+                    <input className="contact-item contact-item-4" type="submit" value="Submit"/>
+
+                </form>
+            </div>
         </div>
+       
     )
 }

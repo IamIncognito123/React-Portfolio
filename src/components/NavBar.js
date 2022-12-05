@@ -3,10 +3,11 @@ import React from "react";
 export default function NavBar ({portfolioPage, handlePortfolioPage}) {
     return(
         <ul className="nav nav-tabs">
-            <li className="nav-item">
-                <h1>Anhvu</h1>
+            <li>
+                <h1 className="header-name">Anhvu</h1>
             </li>
-            <li className="nav-item">
+
+            <li className="nav-item items">
                 <a
                     href="#about"
                     onClick={()=> handlePortfolioPage('About')}
@@ -15,7 +16,7 @@ export default function NavBar ({portfolioPage, handlePortfolioPage}) {
                     About
                 </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item items">
                 <a
                     href="#contact"
                     onClick={()=> handlePortfolioPage('Contact')}
@@ -25,7 +26,7 @@ export default function NavBar ({portfolioPage, handlePortfolioPage}) {
                 </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item items">
                 <a
                     href="#portfolio"
                     onClick={()=> handlePortfolioPage('Portfolio')}
@@ -35,7 +36,7 @@ export default function NavBar ({portfolioPage, handlePortfolioPage}) {
                 </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item items">
                 <a
                     href="#resume"
                     onClick={()=> handlePortfolioPage('Resume')}

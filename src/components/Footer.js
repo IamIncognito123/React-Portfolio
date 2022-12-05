@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer () {
     return(
-        <div>
+        <div className="footer">
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                 <img alt="LinkedInLogo" src={process.env.PUBLIC_URL + '/images/LI-In-Bug.png'} width="70" height="50"/>
             </a>

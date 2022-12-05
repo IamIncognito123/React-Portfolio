@@ -1,0 +1,85 @@
+.portfolio-app {
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    margin: 20px;
+}
+
+.page{
+
+}
+
+/* navbar/header */
+.items{
+}
+
+/* about page */
+.about-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.description{
+    float: right;
+    margin-left: 20px;
+}
+
+
+
+
+/* contact page */
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* portfolio page */
+
+.porfolio-page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+
+}
+
+.portfolio-item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.project-name{
+    color: black;
+    text-decoration: none;
+}
+
+/* resume page */
+.resume-page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
