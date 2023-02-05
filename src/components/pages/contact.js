@@ -20,16 +20,20 @@ export default function Contact(){
         setTextArea(event.target.value)
     }
 
+
     const handleSubmit = (event) =>{
         if (textArea === ''){
-            alert('Please enter a message')
+            setMessage('Please enter a message.')
         }else{
-            alert('successfully submitted')
+            setMessage('Successfully submitted!')
         }
-
 
         event.preventDefault();
     }
+
+    const[message, setMessage] = useState('')
+
+
 
     return(
         <div>
@@ -51,7 +55,9 @@ export default function Contact(){
 
                     <input className="contact-item contact-item-4" type="submit" value="Submit"/>
 
+                    <p className="message">{message}</p>
                 </form>
+
             </div>
         </div>
        

@@ -12,7 +12,25 @@
 }
 
 /* navbar/header */
-.items{
+.nav{
+    background-color:grey;
+    justify-content: space-between;
+}
+.nav h1{
+    padding-left: 20px;
+    padding-top: 25px;
+    color: white;
+}
+.nav li{
+    padding: 20px;
+    margin: 20px;
+}
+.text{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+
 }
 
 /* about page */
@@ -40,6 +58,10 @@
 .contact-item{
     display: flex;
     flex-direction: column;
+}
+
+.message{
+    display: flex;
 }
 
 

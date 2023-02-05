@@ -1,51 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function NavBar ({portfolioPage, handlePortfolioPage}) {
+export default function NavBar () {
     return(
-        <ul className="nav nav-tabs">
-            <li>
-                <h1 className="header-name">Anhvu</h1>
-            </li>
-
-            <li className="nav-item items">
-                <a
-                    href="#about"
-                    onClick={()=> handlePortfolioPage('About')}
-                    className={portfolioPage === 'About' ? 'nav-link active': 'nav-link'}
+        <nav className="nav">
+            <h1>Anhvu Nguyen</h1>
+            <li className="nav-link">
+                <Link 
+                    to='/'
+                    className="text"
                 >
                     About
-                </a>
-            </li>
-            <li className="nav-item items">
-                <a
-                    href="#contact"
-                    onClick={()=> handlePortfolioPage('Contact')}
-                    className={portfolioPage === 'Contact' ? 'nav-link active': 'nav-link'}
+                </Link>
+
+                <Link 
+                    to='/Contact'
+                    className="text"
                 >
                     Contact
-                </a>
-            </li>
+                </Link>
 
-            <li className="nav-item items">
-                <a
-                    href="#portfolio"
-                    onClick={()=> handlePortfolioPage('Portfolio')}
-                    className={portfolioPage === 'Portfolio' ? 'nav-link active': 'nav-link'}
+                <Link 
+                    to='/Portfolio'
+                    className="text"
                 >
                     Portfolio
-                </a>
-            </li>
-
-            <li className="nav-item items">
-                <a
-                    href="#resume"
-                    onClick={()=> handlePortfolioPage('Resume')}
-                    className={portfolioPage === 'Resume' ? 'nav-link active': 'nav-link'}
+                </Link>
+  
+                <Link 
+                    to='/Resume'
+                    className="text"
                 >
                     Resume
-                </a>
+                </Link>
             </li>
 
-        </ul>
+        </nav>
     )
 }

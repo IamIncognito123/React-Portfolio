@@ -1,12 +1,25 @@
 import React from "react";
-import Footer from "./components/Footer";
-import PortfolioRender from "./components/PortfolioRender";
 import './App.css'
+
+// pages
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact"
+import Portfolio from "./components/pages/Portfolio";
+import Resume from "./components/pages/Resume";
+import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 const App = () => {
     return (
         <div className="portfolio-app">
-            <PortfolioRender/>
+            <NavBar/>
+            <Routes>
+                <Route path="/" element={<About/>}></Route>
+                <Route path="/Contact" element={<Contact/>}></Route>
+                <Route path="/Portfolio" element={<Portfolio/>}></Route>
+                <Route path="/Resume" element={<Resume/>}></Route>
+            </Routes>
             <Footer/>
         </div>
     )
