@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.c41f970d.css",
-    "main.js": "/React-Portfolio/static/js/main.374c2482.js",
+    "main.css": "/React-Portfolio/static/css/main.41e317e4.css",
+    "main.js": "/React-Portfolio/static/js/main.ba9fccb6.js",
     "static/media/gamespace.JPG": "/React-Portfolio/static/media/gamespace.e5605437b88ba893f148.JPG",
+    "static/media/doggy-daycare.JPG": "/React-Portfolio/static/media/doggy-daycare.d89ab39e590e4075c002.JPG",
     "index.html": "/React-Portfolio/index.html",
-    "main.c41f970d.css.map": "/React-Portfolio/static/css/main.c41f970d.css.map",
-    "main.374c2482.js.map": "/React-Portfolio/static/js/main.374c2482.js.map"
+    "main.41e317e4.css.map": "/React-Portfolio/static/css/main.41e317e4.css.map",
+    "main.ba9fccb6.js.map": "/React-Portfolio/static/js/main.ba9fccb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c41f970d.css",
-    "static/js/main.374c2482.js"
+    "static/css/main.41e317e4.css",
+    "static/js/main.ba9fccb6.js"
   ]
 }
