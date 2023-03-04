@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.967bf2d9.css",
-    "main.js": "/React-Portfolio/static/js/main.6b5b801d.js",
+    "main.css": "/React-Portfolio/static/css/main.a23b359d.css",
+    "main.js": "/React-Portfolio/static/js/main.bac173ee.js",
     "static/media/Resume1.pdf": "/React-Portfolio/static/media/Resume1.9ceb63a56b89ddb9e15d.pdf",
     "static/media/gamespace.JPG": "/React-Portfolio/static/media/gamespace.e5605437b88ba893f148.JPG",
     "static/media/doggy-daycare.JPG": "/React-Portfolio/static/media/doggy-daycare.d89ab39e590e4075c002.JPG",
     "index.html": "/React-Portfolio/index.html",
-    "main.967bf2d9.css.map": "/React-Portfolio/static/css/main.967bf2d9.css.map",
-    "main.6b5b801d.js.map": "/React-Portfolio/static/js/main.6b5b801d.js.map"
+    "main.a23b359d.css.map": "/React-Portfolio/static/css/main.a23b359d.css.map",
+    "main.bac173ee.js.map": "/React-Portfolio/static/js/main.bac173ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.967bf2d9.css",
-    "static/js/main.6b5b801d.js"
+    "static/css/main.a23b359d.css",
+    "static/js/main.bac173ee.js"
   ]
 }
