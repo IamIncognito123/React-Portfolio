@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Footer () {
+    // process.env.PUBLIC_URL
     return(
         <div className="footer">
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">

@@ -9,13 +9,15 @@ import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Home from "./components/pages/Home";
 
 const App = () => {
     return (
         <div className="portfolio-app">
             <NavBar/>
-            <Routes>
-                <Route path="/" element={<About/>}></Route>
+            <Routes>                
+                <Route path="/React-Portfolio" element={<Home/>}></Route>
+                <Route path="/About" element={<About/>}></Route>
                 <Route path="/Contact" element={<Contact/>}></Route>
                 <Route path="/Portfolio" element={<Portfolio/>}></Route>
                 <Route path="/Resume" element={<Resume/>}></Route>

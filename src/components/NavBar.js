@@ -7,7 +7,14 @@ export default function NavBar () {
             <h1>Anhvu Nguyen</h1>
             <li className="nav-link">
                 <Link 
-                    to='/'
+                    to='/React-Portfolio'
+                    className="text"
+                >
+                    Home
+                </Link>
+
+                <Link 
+                    to='/About'
                     className="text"
                 >
                     About

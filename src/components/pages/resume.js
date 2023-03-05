@@ -1,11 +1,19 @@
 import React from "react";
-
+import Resume1 from '../../documents/Resume1.pdf';
 export default function Resume() {
+
+
     return(
-        <div>
+        <div className="page">
             <h1 className="title">Resume</h1>
-            <div className="page resume-page">
-                <h3>Download Resume</h3>
+            <div className="resume-page">
+                <a href={Resume1} download>
+                    <button className="resumeButton">
+                        <h3>Download Resume</h3>
+                    </button>
+
+                </a>
+
                 <h3>Front-End</h3>
                     <p>
                         <ul>

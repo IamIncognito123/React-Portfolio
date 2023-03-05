@@ -1,6 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
+// brings in emailjs browser package
+import emailjs from '@emailjs/browser';
 
 export default function Contact(){ 
+
+    // useRef does not re-render the component when changed, unlike state 
+    // can be used to store information in between renders 
+    const refForm = useRef();
 
     // handles the state of names
     const[name, setName] = useState('');
@@ -14,6 +21,12 @@ export default function Contact(){
         setEmail(event.target.value)
     }
 
+    // handles the state of subject
+    const[subject, setSubject] = useState('')
+    const handleSubject = (event) => {
+        setSubject(event.target.value)
+    }
+
     // handles the state of messages
     const[textArea, setTextArea] = useState('')
     const handleText = (event) =>{
@@ -21,26 +34,41 @@ export default function Contact(){
     }
 
 
-    const handleSubmit = (event) =>{
+    
+    const[validation, setValidation] = useState('')
+    // updates the message class to change color 
+    const[validationClass, setValidationClass] = useState('')
+
+    // lets user know validity of message after submitting
+    const handleSubmit = (e) =>{
+
         if (textArea === ''){
-            setMessage('Please enter a message.')
+            setValidation('Please enter a message.')
+            setValidationClass('invalidMessage')
         }else{
-            setMessage('Successfully submitted!')
+            // using the sendForm method from emailjs to send data collected from the form as an email
+            emailjs.sendForm('default_service', 'template_qyqu7xe', refForm.current, 'chgICPeVH3BEo3nC3')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            setValidation('Successfully submitted!')
+            setValidationClass('validMessage')
         }
 
-        event.preventDefault();
+        e.preventDefault();
     }
-
-    const[message, setMessage] = useState('')
 
 
 
     return(
-        <div>
-            <h1 className="title">Contact</h1>
-             <div className="page contact-page">
-
-                <form onSubmit={handleSubmit}>
+        <div className="page">
+            <h1 className="title">Contact Me</h1>
+             <div className="contact-page">
+                {/* uses ref to store a reference to a DOM node */}
+                <form ref={refForm} onSubmit={handleSubmit}>
                     <label className="contact-item contact-item-1" for="name">Name:
                         <input type='text' name="name" value={name} onChange={handleName} required/>
                     </label>
@@ -49,13 +77,17 @@ export default function Contact(){
                         <input type="text" name="email" value={email} onChange={handleEmail} required/>
                     </label>
 
-                    <label className="contact-item contact-item-3" for="message">Message:
-                        <textarea value={textArea} onChange={handleText}/>
+                    <label className="contact-item contact-item-3" for="subject">Subject:
+                        <input type='text' name='subject' value={subject} onChange={handleSubject}/>
                     </label>
 
-                    <input className="contact-item contact-item-4" type="submit" value="Submit"/>
+                    <label className="contact-item contact-item-4" for="message">Message:
+                        <textarea name='message' value={textArea} onChange={handleText}/>
+                    </label>
 
-                    <p className="message">{message}</p>
+                    <input className="contact-item contact-item-5" type="submit" value="Submit"/>
+
+                    <p className={validationClass}>{validation}</p>
                 </form>
 
             </div>
