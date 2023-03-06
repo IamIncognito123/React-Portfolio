@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.87efaf30.css",
-    "main.js": "/React-Portfolio/static/js/main.41cf50c3.js",
+    "main.css": "/React-Portfolio/static/css/main.2a34a0b0.css",
+    "main.js": "/React-Portfolio/static/js/main.3f9bc2a8.js",
+    "static/media/Social-NetworkAPI.JPG": "/React-Portfolio/static/media/Social-NetworkAPI.860fa0232fd1e76f7a3a.JPG",
     "static/media/Resume1.pdf": "/React-Portfolio/static/media/Resume1.9ceb63a56b89ddb9e15d.pdf",
     "static/media/gamespace.JPG": "/React-Portfolio/static/media/gamespace.e5605437b88ba893f148.JPG",
     "static/media/doggy-daycare.JPG": "/React-Portfolio/static/media/doggy-daycare.d89ab39e590e4075c002.JPG",
     "index.html": "/React-Portfolio/index.html",
-    "main.87efaf30.css.map": "/React-Portfolio/static/css/main.87efaf30.css.map",
-    "main.41cf50c3.js.map": "/React-Portfolio/static/js/main.41cf50c3.js.map"
+    "main.2a34a0b0.css.map": "/React-Portfolio/static/css/main.2a34a0b0.css.map",
+    "main.3f9bc2a8.js.map": "/React-Portfolio/static/js/main.3f9bc2a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.87efaf30.css",
-    "static/js/main.41cf50c3.js"
+    "static/css/main.2a34a0b0.css",
+    "static/js/main.3f9bc2a8.js"
   ]
 }
