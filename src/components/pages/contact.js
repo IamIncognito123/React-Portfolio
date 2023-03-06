@@ -66,7 +66,7 @@ export default function Contact(){
     return(
         <div className="page">
             <h1 className="title">Contact Me</h1>
-             <div className="contact-page">
+             <div className="contactForm">
                 {/* uses ref to store a reference to a DOM node */}
                 <form ref={refForm} onSubmit={handleSubmit}>
                     <label className="contact-item contact-item-1" for="name">Name:

@@ -13,7 +13,7 @@ import Home from "./components/pages/Home";
 
 const App = () => {
     return (
-        <div className="portfolio-app">
+        <div className="portfolio-app clouds">
             <NavBar/>
             <Routes>                
                 <Route path="/React-Portfolio" element={<Home/>}></Route>

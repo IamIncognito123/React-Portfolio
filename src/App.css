@@ -1,3 +1,4 @@
+
 .portfolio-app {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,6 @@
 }
 
 .page{
- background-color: aqua;
 }
 
 /* navbar/header */
@@ -41,13 +41,10 @@
 
 
 /* home page */
-.homePage{
-}
 
 .homeHeader{
     display: flex;
     flex-direction: column;
-    width: 100%;
     will-change: contents;
     height: 90%;
     min-height: 566px;
@@ -70,6 +67,7 @@
 
 /* about page */
 .about-page {
+    animation: fadeIn 3s;
     display: flex;
     justify-content: space-between;
     margin: 25px 50px;
@@ -84,19 +82,22 @@
     margin-left: 20px;
     padding: 15px;
     border-radius: 20px;
-    background-color: gray;
-    color: white;
+    color: black;
 }
 
 
 
 /* contact page */
-.contact-page {
+.contactForm {
     display: flex;
+    max-width: 230px;
     justify-content: space-between;
-    margin: 50px;
+    margin: 20px 0px 50px 50px;
     background-color: grey;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    animation: fadeIn 3s;
 
 }
 
@@ -119,6 +120,7 @@
 .portfolio{
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 50px;
 
 }
 
@@ -187,16 +189,25 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: 50px;
+    margin: 20px 0px 30px 60px;
+    animation: fadeIn 3s;
 }
 
+.buttonContainer{
+    max-width: 260px;
+}
 .resumeButton{
     border: none;
-    background-color: grey;
+    background-color: black;
     color: white;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin-bottom: 20px;
+
+}
+
+.resumeSkills{
+    margin-left: 30px;
 }
 
 /* footer */
@@ -206,3 +217,24 @@
     margin: 30px;
 }
 
+
+/* page background */
+
+.clouds {
+	/* position:absolute; */
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.clouds{
+	z-index: 2;
+    background:transparent url('https://i.imgur.com/mHbScrQ.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
